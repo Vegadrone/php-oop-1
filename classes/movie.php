@@ -9,6 +9,16 @@
         private $rating;
         
         //constructor
+
+        /**
+         * 
+         * @param $_title 'The movie's title'
+         * @param $_genre The movie's genre (eg. horror, western, ...)
+         * @param $_director Name and surname of the movie's director
+         * @param $_year Year of release
+         * @param $_rating ratings from IMDb 
+         * 
+         */
         public function __construct($_title, $_genre, $_director, $_year, $_rating){
             $this->title = $_title;
             $this->genre = $_genre;
@@ -39,6 +49,4 @@
             return $this->rating;
         }  
     }
-
-    
 ?>
