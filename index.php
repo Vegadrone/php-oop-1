@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . ('/classes/movie.php');
+require_once __DIR__ . ('/classes/actor.php');
 
 $movies = [];
 $movies[] = new Movie('Dracula', 'Horror', 'Todd Browning', 1931, 7.4);
