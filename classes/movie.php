@@ -9,6 +9,7 @@ require_once __DIR__ . ('/actor.php');
         private $director;
         private $year;
         private $rating;
+        private $castMembers = [];
         
         //constructor
 
@@ -32,23 +33,31 @@ require_once __DIR__ . ('/actor.php');
         //methods
 
         public function getTitle(){
-            return $this->title;
+            return $this-> title;
         }
 
         public function getGenre(){
-            return $this->genre;
+            return $this-> genre;
         }
 
         public function getDirector(){
-            return $this->director;
+            return $this-> director;
         }
 
         public function getYear(){
-            return $this->year;
+            return $this-> year;
         }
 
         public function getRating(){
-            return $this->rating;
+            return $this-> rating;
         }  
+
+        public function getCastMembers(){
+            return $this-> castMembers;
+        }
+
+        public function addCastMember($actor){
+            $this-> castMembers[]= $actor;
+        }
     }
 ?>
