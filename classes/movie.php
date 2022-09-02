@@ -16,5 +16,29 @@
             $this->year = $_year;
             $this->rating = $_rating;
         }
+
+        //methods
+
+        public function getTitle(){
+            return $this->title;
+        }
+
+        public function getGenre(){
+            return $this->genre;
+        }
+
+        public function getDirector(){
+            return $this->director;
+        }
+
+        public function getYear(){
+            return $this->year;
+        }
+
+        public function getRating(){
+            return $this->rating;
+        }  
     }
+
+    
 ?>
