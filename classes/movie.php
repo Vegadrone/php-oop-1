@@ -27,7 +27,7 @@ require_once __DIR__ . ('/actor.php');
             $this->genre = $_genre;
             $this->director = $_director;
             $this->year = $_year;
-            $this->rating = $_rating;
+            $this->rating = $_rating;  
         }
 
         //methods
@@ -36,21 +36,41 @@ require_once __DIR__ . ('/actor.php');
             return $this-> title;
         }
 
+        public function setTitle($_title){
+            $this->title = $_title;
+        }
+
         public function getGenre(){
             return $this-> genre;
+        }
+
+        public function setGenre($_genre){
+            $this->genre = $_genre;
         }
 
         public function getDirector(){
             return $this-> director;
         }
 
+        public function setDirector($_director){
+            $this->director = $_director;
+        }
+
         public function getYear(){
             return $this-> year;
         }
 
+        public function setYear($_year){
+            $this->year = $_year;
+        }
+
         public function getRating(){
             return $this-> rating;
-        }  
+        }
+
+        public function setRating($_rating){
+            $this->rating = $_rating;
+        }
 
         public function getCastMembers(){
             return $this-> castMembers;
